@@ -1,7 +1,18 @@
 <template>
   <!--使用Bootstrap如果不使用面板的话，要把元素放进一个占满100%屏幕的容器里-->
   <!--class="container"则自动居中-->
-  <div class="container-fluid" style="overflow:scroll; height: 50rem">
+  <div class="container-fluid" style="overflow:scroll; height: 65rem">
+    <!--首页头部-->
+    <HeaderTop title="babyli">
+      <div class="header_login" slot="right">
+        <span class="header_login_text">
+           <span @click="goToUserSetting()">设置</span>
+          <!--<router-view></router-view>-->
+           <!--<span @click="$router.push('/user/UserSetting')">设置</span>-->
+        </span>
+      </div>
+    </HeaderTop>
+
     <div class="user-header">
       <div class="row">
         <div class="col-2">
@@ -114,6 +125,37 @@
         </div>
       </div>
     </div>
+    <hr/>
+    <div class="user-bank-card">
+      <div class="row">
+        <div class="col-10">
+          <i class="iconfont icon-yinhangqia" style="color: #92D6ED;"></i>
+          我的银行卡
+        </div>
+        <div class="col-2">
+          <i class="iconfont icon-yanjing1" style="font-size: 2rem"></i>
+        </div>
+      </div>
+      <div class="row user-bank-card-money">
+        <div class="col-6">173.98元</div>
+        <div class="col-6">675.88元</div>
+      </div>
+      <div class="row user-bank-card-font-1">
+        <div class="col-6">本月淘宝消费</div>
+        <div class="col-6">用花呗笔笔挖金</div>
+      </div>
+      <div class="row user-bank-card-font-2">
+        <div class="col-6">花了多少一目了然</div>
+        <div class="col-6">去看看</div>
+      </div>
+      <br/>
+      <div class="row">
+        <div class="col-12">
+          <button class="btn btn-info">查看更多服务</button>
+        </div>
+
+      </div>
+    </div>
   </div>
 </template>
 
@@ -122,9 +164,21 @@
   /*$(function () {
     alert('234')
   })*/
+  import HeaderTop from '@/components/HeaderTop/HeaderTop.vue'
   export default {
-
-    methods: {}
+    data() {
+      return {
+      }
+    },
+    methods: {
+      // 跳转到用户设置
+      goToUserSetting() {
+        this.$router.push('/user/userSetting')
+      },
+    },
+    components: {
+      HeaderTop,
+    }
   }
 
 </script>
@@ -164,6 +218,21 @@
       color: #ffffff;
       font-size: 2rem;
     }
+  }
+
+  .user-bank-card-money {
+    color: #1D79BC;
+    font-size: 2rem;
+  }
+
+  .user-bank-card-font-1 {
+    color: #000000;
+    font-size: 1.2rem;
+  }
+
+  .user-bank-card-font-2 {
+    color: #999999;
+    font-size: 1rem;
   }
 
 </style>

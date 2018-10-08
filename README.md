@@ -28,6 +28,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 1.安装mint-ui
 npm install --save mint-ui
+npm install --save-dev babel-plugin-component(在babelc中配置)
 2.安装axios
 npm install --save axios
 3.安装vuex
