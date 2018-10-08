@@ -26,3 +26,13 @@ npm test
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
+1.安装mint-ui
+npm install --save mint-ui
+2.安装axios
+npm install --save axios
+3.安装vuex
+npm install --save vuex
+4.安装less
+npm install less less-loader --save
+
+

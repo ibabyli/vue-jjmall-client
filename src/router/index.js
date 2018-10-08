@@ -1,15 +1,26 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Home from '../pages/Home/Home.vue'
+import News from '../pages/News/News.vue'
+import ShopCart from '../pages/ShopCart/ShopCart.vue'
+import User from '../pages/User/User.vue'
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
+  routes: 
+  [
+    { 
+    	path: '/home', component: Home, meta: { showFooter: true }
+    },
+    { 
+    	path: '/news', component: News, meta: { showFooter: true }
+    },
+    { 
+    	path: '/shopCart', component: ShopCart, meta: { showFooter: true }
+    },
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
+      path: '/user', component: User, meta: { showFooter: true }
+    },
   ]
 })
