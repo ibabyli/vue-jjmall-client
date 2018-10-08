@@ -34,5 +34,13 @@ npm install --save axios
 npm install --save vuex
 4.安装less
 npm install less less-loader --save
+-- 使用bootstrap
+5.安装jQuery
+npm install jquery --save
+6.安装bootstrap
+npm install bootstrap --save
+7.安装popper.js
+npm install popper.js --save
+
 
 

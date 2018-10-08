@@ -2,26 +2,26 @@
   <div class="footer_guide">
     <span class="guide_item" :class="{on: '/home'===$route.path}" @click="goTo('/home')">
       <span class="item_icon">
-        <i class="iconfont icon-shouye"></i>
+        <i class="iconfont icon-taobao"></i>
       </span>
       <span>首页</span>
     </span>
     <span class="guide_item" :class="{on: '/news'===$route.path}" @click="goTo('/news')">
       <span class="item_icon">
-        <i class="iconfont icon-zixun"></i>
+        <i class="iconfont icon-xiaoxi1"></i>
       </span>
       <span>消息</span>
     </span>
     <span class="guide_item" :class="{on: '/shopCart'===$route.path}" @click="goTo('/shopCart')">
       <span class="item_icon">
-        <i class="iconfont icon-wode"></i>
+        <i class="iconfont icon-gouwuche1"></i>
       </span>
       <span>购物车</span>
     </span>
     
     <span class="guide_item" :class="{on: '/user'===$route.path}" @click="goTo('/user')">
       <span class="item_icon">
-        <i class="iconfont icon-wode"></i>
+        <i class="iconfont icon-wodedangxuan"></i>
       </span>
       <span>我的</span>
     </span>
@@ -62,7 +62,8 @@
       margin: 5px;
       color: #999999;
       &.on {
-      	color: #02a774;
+      	//color: #02a774;
+      	color: red;
       }
       span {
       	font-size: 12px;

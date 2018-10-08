@@ -4,6 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store' // 声明使用vuex
+import $ from 'jquery'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 
 // 图片懒加载
 // import VueLazyload from 'vue-lazyload'
@@ -16,9 +19,9 @@ import store from './store' // 声明使用vuex
 Vue.config.productionTip = false // 设置为 false 以阻止 vue 在启动时生成生产提示。
 
 // 引入部分
-import { Button, Toast } from 'mint-ui'
-Vue.component(Button.name, Button)
-Vue.component(Toast.name, Toast)
+//import { Button, Toast } from 'mint-ui'
+//Vue.component(Button.name, Button)
+//Vue.component(Toast.name, Toast)
 
 
 
