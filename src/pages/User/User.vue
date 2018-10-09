@@ -16,7 +16,7 @@
     <div class="user-header">
       <div class="row">
         <div class="col-2">
-          <img src="./img/header_img.jpg" class="user-header-img"/>
+          <img src="./img/header_img.jpg" class="user-header-img" @click="goToUserInfo()"/>
         </div>
         <div class="col-7">
           <p style="text-align: left; font-size: 2rem;">ibabyli</p>
@@ -171,6 +171,10 @@
       }
     },
     methods: {
+      // 跳转到用户信息
+      goToUserInfo() {
+        this.$router.push('/user/userInfo')
+      },
       // 跳转到用户设置
       goToUserSetting() {
         this.$router.push('/user/userSetting')

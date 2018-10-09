@@ -1,52 +1,70 @@
 <template>
   <!--使用Bootstrap如果不使用面板的话，要把元素放进一个占满100%屏幕的容器里-->
   <!--class="container"则自动居中-->
-  <div class="">
+  <div class="container-fluid">
     <!--首页头部-->
-    <HeaderTop title="个人资料">
-      <router-link class="header_left" slot="left" to="/user">
+    <HeaderTop title="设置">
+      <router-link class="header_left" slot="left" to="/user" replace>
         <i class="iconfont icon-fanhui" style="font-size: 2rem"></i>
       </router-link>
     </HeaderTop>
 
+    <div class="user-header">
+      <div class="row">
+        <div class="col-2">
+          <img src="./img/header_img.jpg" class="userSetting-header-img" @click="goToUserInfo()" style="margin-top: 0.5rem"/>
+        </div>
+        <div class="col-7">
+          <p style="text-align: left; font-size: 1.5rem;">ibabyli</p>
+          <p style="text-align: left;">会员名：ibabyli</p>
+        </div>
+        <div class="col-3" style="margin-top: 1.5rem;">
+          <i class="iconfont icon-erweima" style="font-size: 1.3rem">> </i>
+        </div>
+      </div>
+    </div>
     <mt-cell
-      title="个人头像"
-      to="//github.com"
-      is-link
-      style="text-align: left">
-      <img src="./img/header_img.jpg" class="userSetting-header-img"/>
-    </mt-cell>
-
-    <mt-cell
-      title="会员名"
+      title="我的收货地址"
       style="text-align: left"
-      is-link
-    value="ibabyli">
+    value=">">
     </mt-cell>
-
     <mt-cell
-      title="淘宝昵称"
+      title="账户与安全"
       to="//github.com"
-      is-link
-      style="text-align: left" value="ibabyli">
+      style="text-align: left" value=">">
     </mt-cell>
-
     <mt-cell
-      title="我的二维码名片"
+      title="地区设置"
       to="//github.com"
-      is-link
-      style="text-align: left">
-      <i class="iconfont icon-erweima" style="font-size: 1.5rem"></i>
+      style="text-align: left" value=">">
     </mt-cell>
-
-    <br/>
     <mt-cell
-      title="性别"
+      title="音效与通知"
       to="//github.com"
-      is-link
-      style="text-align: left" value="女">
+      style="text-align: left" value=">">
+    </mt-cell>
+    <mt-cell
+      title="隐私"
+      to="//github.com"
+      style="text-align: left" value=">">
+    </mt-cell>
+    <mt-cell
+      title="通用"
+      to="//github.com"
+      style="text-align: left" value=">">
+    </mt-cell>
+    <mt-cell
+      title="问题反馈"
+      to="//github.com"
+      style="text-align: left" value=">">
+    </mt-cell>
+    <mt-cell
+      title="关于俊俊商城"
+      to="//github.com"
+      style="text-align: left" value=">">
     </mt-cell>
 
+    <mt-button size="">退出当前账户</mt-button>
 
 
   </div>

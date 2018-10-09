@@ -19,9 +19,9 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 Vue.config.productionTip = false // 设置为 false 以阻止 vue 在启动时生成生产提示。
 
 // 引入部分
-//import { Button, Toast } from 'mint-ui'
-//Vue.component(Button.name, Button)
-//Vue.component(Toast.name, Toast)
+import { Button, Toast } from 'mint-ui'
+Vue.component(Button.name, Button)
+Vue.component(Toast.name, Toast)
 
 
 
