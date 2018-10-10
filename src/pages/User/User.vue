@@ -1,7 +1,7 @@
 <template>
   <!--使用Bootstrap如果不使用面板的话，要把元素放进一个占满100%屏幕的容器里-->
   <!--class="container"则自动居中-->
-  <div class="container-fluid" style="overflow:scroll; height: 70rem">
+  <div class="container-fluid" style="overflow:hidden; height: 70rem">
     <!--首页头部-->
     <HeaderTop title="babyli">
       <div class="header_login" slot="right">
