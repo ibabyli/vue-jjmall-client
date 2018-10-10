@@ -10,26 +10,31 @@ import UserSetting from '../pages/User/UserSetting.vue'
 Vue.use(Router)
 
 export default new Router({
-  routes: 
-  [
-    { path: '/', redirect: '/home' },
-    { 
-    	path: '/home', component: Home, meta: { showFooter: true }
-    },
-    { 
-    	path: '/news', component: News, meta: { showFooter: true }
-    },
-    { 
-    	path: '/shopCart', component: ShopCart, meta: { showFooter: true }
-    },
-    {
-      path: '/user', component: User, meta: { showFooter: true },
-    },
-    {
-      path: '/user/userInfo', component: UserInfo, meta: { showFooter: false },
-    },
-    {
-      path: '/user/userSetting', component: UserSetting, meta: { showFooter: false },
-    },
-  ]
+  routes:
+    [
+      {path: '/', redirect: '/home'},
+      {
+        path: '/home', component: Home, meta: {showFooter: true}
+      },
+      {
+        path: '/news', component: News, meta: {showFooter: true}
+      },
+      {
+        path: '/shopCart', component: ShopCart, meta: {showFooter: true}
+      },
+      {
+        path: '/user', component: User,
+       /* children:
+          [
+            {path: '/user/userSetting', component: UserSetting},
+          ],*/
+        meta: {showFooter: true},
+      },
+      {
+        path: '/user/userInfo', component: UserInfo, meta: {showFooter: false},
+      },
+      {
+        path: '/user/userSetting', component: UserSetting, meta: {showFooter: false},
+      },
+    ]
 })

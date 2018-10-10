@@ -64,7 +64,7 @@
       style="text-align: left" value=">">
     </mt-cell>
 
-    <mt-button size="">退出当前账户</mt-button>
+    <mt-button size="large" type="danger">退出当前账户</mt-button>
 
 
   </div>

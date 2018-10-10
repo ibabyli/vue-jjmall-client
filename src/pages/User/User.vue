@@ -1,10 +1,15 @@
 <template>
   <!--使用Bootstrap如果不使用面板的话，要把元素放进一个占满100%屏幕的容器里-->
   <!--class="container"则自动居中-->
-  <div class="container-fluid" style="overflow:scroll; height: 65rem">
+  <div class="container-fluid" style="overflow:scroll; height: 70rem">
     <!--首页头部-->
     <HeaderTop title="babyli">
       <div class="header_login" slot="right">
+        <!--<router-link to="/user/userSetting" replace>
+          <span class="header_login_text">
+           <span>设置</span>
+        </span>
+        </router-link>-->
         <span class="header_login_text">
            <span @click="goToUserSetting()">设置</span>
           <!--<router-view></router-view>-->
@@ -156,6 +161,7 @@
 
       </div>
     </div>
+
   </div>
 </template>
 
@@ -220,7 +226,7 @@
   .user-header {
     .iconfont {
       color: #ffffff;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 
