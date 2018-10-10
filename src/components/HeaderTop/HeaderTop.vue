@@ -60,6 +60,21 @@
         color: #fff;
       }
     }
+    // 头部搜索
+    .header_search {
+      position: absolute;
+      left: 15px;
+      top:50%;
+      color: #ffffff;
+      transform: translateY(-50%);
+      width:40%;
+      height: 50%;
+      .icon-sousuo {
+        font-size: 25px;
+        color:#fff;
+      }
+
+    }
 
   }
 </style>

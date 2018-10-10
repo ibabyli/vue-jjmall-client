@@ -43,5 +43,22 @@ npm install bootstrap --save
 7.安装popper.js
 npm install popper.js --save
 
+----------------------使用vant分支--------------------------------
+1.安装vant
+npm i vant -S
+2.配置babelrc
+# 安装 babel-plugin-import 插件
+npm i babel-plugin-import -D
+3.// .babelrc 中配置
+// 注意：webpack 1 无需设置 libraryDirectory
+{
+  "plugins": [
+    ["import", {
+      "libraryName": "vant",
+      "libraryDirectory": "es",
+      "style": true
+    }]
+  ]
+}
 
 
